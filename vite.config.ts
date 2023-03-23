@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 
+import Unocss from "./config/unocss";
+
 // https://vitejs.dev/config/
 
 const rollupOptions = {
@@ -14,8 +16,11 @@ const rollupOptions = {
 };
 
 export default defineConfig({
-  plugins: [vue(), vueJsx()],
+  plugins: [vue(), vueJsx(),
+  // 添加UnoCSS插件
+  Unocss()],
   build: {
+    cssCodeSplit: true,
     rollupOptions,
     minify: false,
     lib: {

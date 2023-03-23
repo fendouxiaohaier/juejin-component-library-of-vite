@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="../../dist/assets/index.css" crossorigin="anonymous">
+  </head>
   <body>
     <h1>Demo</h1>
     <div id="app"></div>
     <script type="module">
-      import { createApp } from 'vue/dist/vue.esm-bundler.js';
-      import SmartyUI, { SFCButton, JSXButton, MyButton } from '../../dist/smarty-ui.mjs';
+      import { createApp } from "vue/dist/vue.esm-bundler.js";
+      import SmartyUI, {
+        SFCButton,
+        JSXButton,
+        MyButton,
+      } from "../../dist/smarty-ui.mjs";
 
       createApp({
         template: `
-          <SButton/>
-          <JSXButton/>
-          <SFCButton/>
+        <SButton color="blue"  icon="search" >蓝色</SButton>
+          
         `,
       })
         .use(SmartyUI)
-        .mount('#app');
+        .mount("#app");
     </script>
   </body>
 </html>
