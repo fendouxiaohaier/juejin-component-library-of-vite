@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1680016726724" clover="3.2.0">
+  <project timestamp="1680016726724" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="17" coveredelements="17" complexity="0" loc="14" ncloc="14" packages="1" files="4" classes="4"/>
+    <file name="add.js" path="/Users/liyang/Documents/self/juejin-component-library-of-vite/jest/add.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+    </file>
+    <file name="dom.js" path="/Users/liyang/Documents/self/juejin-component-library-of-vite/jest/dom.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+    <file name="fetch.js" path="/Users/liyang/Documents/self/juejin-component-library-of-vite/jest/fetch.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+    </file>
+    <file name="jsdom-config.js" path="/Users/liyang/Documents/self/juejin-component-library-of-vite/jest/jsdom-config.js">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
