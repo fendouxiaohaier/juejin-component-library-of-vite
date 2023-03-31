@@ -10,7 +10,7 @@ describe("测试Button", () => {
     // @vue/test-utils
     const wrapper = shallowMount(Button, {
       slots: {
-        default: "Buttona",
+        default: "Buttonaa",
       },
     });
 
