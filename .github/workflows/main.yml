@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  Lint:
+  # Lint:
     # Lint任务
   UnitTest:
     # 单元测试任务
