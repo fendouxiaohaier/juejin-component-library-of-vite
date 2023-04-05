@@ -63,7 +63,7 @@ export default defineComponent({
         class={`
         py-${size[props.size].y}
           px-4 
-          font-semibold 
+          font-ssemibold 
           rounded-lg 
           shadow-md 
           text-white 
