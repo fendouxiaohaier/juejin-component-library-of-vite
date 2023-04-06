@@ -16,7 +16,7 @@
     "prepare": "husky install"
   },
   "files": [
-    "./dist/*"
+    "dist"
   ],
   "keywords": [],
   "author": "",
