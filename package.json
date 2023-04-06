@@ -15,9 +15,6 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "prepare": "husky install"
   },
-  "files": [
-    "./dist/**"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
