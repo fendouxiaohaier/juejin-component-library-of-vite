@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <h1>Demo IFFE</h1>
+</head>
+
+<body>
+
+    <h1>🔨 SmartyUI Demo</h1>
     <div id="app"></div>
-    <link rel="stylesheet" href="../dist/assets/entry.c11c41df.css" />
-    <script src="../node_modules/vue/dist/vue.global.js"></script>
-    <script src="../dist/smarty-ui.iife.js"></script>
-    <script>
-      console.log("111");
-      const { createApp } = Vue;
-      console.log("vue", Vue);
-      console.log("SmartyUI", SmartyUI);
-      createApp({
-        template: `
+    <script type="module">
+        import style from "liyang-smarty-ui-vite/dist/assets/entry.df06c0c5.css"
+        import { createApp } from "vue/dist/vue.esm-bundler.js";
+        import SmartyUI, { SFCButton, JSXButton, MyButton } from "liyang-smarty-ui-vite/dist/smarty-ui.mjs";
+
+        createApp({
+            template: `
         <div style="margin-bottom:20px;">
             <SButton color="blue">主要按钮</SButton>
             <SButton color="green">绿色按钮</SButton>
@@ -53,10 +53,9 @@
             <SButton color="yellow" round plain icon="message"></SButton>
             <SButton color="red" round plain icon="delete"></SButton>
         </div>
-    `,
-      })
-        .use(SmartyUI.default)
-        .mount("#app");
+    `}).use(SmartyUI).mount('#app')
+
     </script>
-  </body>
+</body>
+
 </html>

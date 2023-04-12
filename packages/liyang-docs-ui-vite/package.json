@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "# 启动vite服务 \n vite",
+    "dev": "vite",
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -13,8 +13,7 @@
     "test:run": "vitest run",
     "lint": "eslint --fix --ext .ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install",
-    "preinstall": "# 禁用npm和yarn \n npx only-allow pnpm"
+    "prepare": "husky install"
   },
   "files": [
     "dist"
