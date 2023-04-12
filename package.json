@@ -11,7 +11,7 @@
     "docs:serve": "vitepress serve docs",
     "test": "vitest",
     "test:run": "vitest run",
-    "lint": "eslint --fix --ext .ts,.tsx,.vue src",
+    "lint": "eslint --fix --ext .ts,.tsx,.vue packages",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "prepare": "husky install",
     "preinstall": "# 禁用npm和yarn \n npx only-allow pnpm"
