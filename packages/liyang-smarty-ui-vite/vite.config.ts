@@ -19,7 +19,7 @@ const rollupOptions = {
   },
 };
 
-export default defineConfig({
+export const config = {
   plugins: [
     vue(),
     vueJsx(),
@@ -31,7 +31,7 @@ export default defineConfig({
     sourcemap: true,
     cssCodeSplit: true,
     rollupOptions,
-    minify: "terser", // boolean | 'terser' | 'esbuild'
+    minify: "terser" as const, // boolean | 'terser' | 'esbuild'
     lib: {
       entry: "./src/entry.ts",
       // 生成包的名字，在 iife/umd 包，同一页上的其他脚本可以访问它
@@ -41,6 +41,7 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   test: {
     // enable jest-like global test APIs
@@ -53,4 +54,6 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+} as any;
+
+export default defineConfig(config);
