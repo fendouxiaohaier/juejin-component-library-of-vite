@@ -15,7 +15,6 @@
     "coverage": "# 代码覆盖率测试 \n vitest run --coverage",
     "lint": "eslint --fix --ext .ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install",
     "build:components": "rm -rf ./dist && esno ./scripts/build.ts"
   },
   "files": [
