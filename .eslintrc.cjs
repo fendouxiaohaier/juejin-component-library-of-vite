@@ -24,7 +24,7 @@ module.exports = {
     parser: "@typescript-eslint/parser", // 解析 .ts 文件
   },
   rules: {
-    "no-console": "error",
+    "no-console": "warn",
     "no-debugger": "warn",
     "prettier/prettier": "error",
   },
