@@ -2,7 +2,7 @@
   "name": "liyang-smarty-ui-vite",
   "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "smarty-ui.umd.js",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",
@@ -60,5 +60,7 @@
     "typescript": "^5.0.2",
     "vite-plugin-dts": "^2.3.0",
     "vue": "3.2.37"
-  }
+  },
+  "module": "smarty-ui.esm.js",
+  "types": "smarty-ui.d.ts"
 }

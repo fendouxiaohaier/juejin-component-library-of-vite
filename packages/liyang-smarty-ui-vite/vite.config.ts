@@ -3,6 +3,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import dts from "vite-plugin-dts";
 
 import Unocss from "../../config/unocss";
 
@@ -25,6 +26,12 @@ export const config = {
     vueJsx(),
     // 添加UnoCSS插件
     Unocss(),
+    /** 导出ts描述文件 */
+    dts({
+      outputDir: "./dist/types",
+      insertTypesEntry: false, // 插入TS 入口
+      copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
+    }),
   ],
   build: {
     // 输出单独 source文件
