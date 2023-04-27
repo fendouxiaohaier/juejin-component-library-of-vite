@@ -1,20 +1,24 @@
 {
-  "name": "juejin-component-library-of-vite",
-  "version": "1.0.0",
+  "name": "liyang-component-library-of-vite",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "# 启动vite服务 \n vite",
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "test": "vitest",
     "test:run": "vitest run",
-    "lint": "eslint --fix --ext .ts,.tsx,.vue src",
+    "lint": "eslint --fix --ext .ts,.tsx,.vue packages",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "# 禁用npm和yarn \n npx only-allow pnpm"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -32,6 +36,7 @@
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-vue": "^9.10.0",
+    "fs-extra": "^11.1.1",
     "happy-dom": "6.0.4",
     "husky": "^8.0.3",
     "jest": "29.5.0",
